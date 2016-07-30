@@ -17,7 +17,7 @@
 #####
 #####		SENDMAIL CONFIGURATION FILE
 #####
-##### built by root@releng1.nyi.freebsd.org
+##### built by root@amd64-builder.daemonology.net
 ##### in /usr/obj/usr/src/etc/sendmail
 ##### using /usr/src/etc/sendmail/../../contrib/sendmail/cf/ as configuration include directory
 #####
