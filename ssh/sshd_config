@@ -76,7 +76,7 @@
 #PermitEmptyPasswords no
 
 # Change to no to disable PAM authentication
-ChallengeResponseAuthentication no
+ChallengeResponseAuthentication yes
 
 # Kerberos options
 #KerberosAuthentication no
