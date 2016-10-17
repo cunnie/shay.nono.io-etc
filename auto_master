@@ -1,4 +1,4 @@
-# $FreeBSD: releng/10.3/etc/auto_master 283242 2015-05-21 13:42:37Z trasz $
+# $FreeBSD: releng/11.0/etc/auto_master 279955 2015-03-13 12:44:46Z trasz $
 #
 # Automounter master map, see auto_master(5) for details.
 #

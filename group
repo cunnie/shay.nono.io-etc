@@ -1,4 +1,4 @@
-# $FreeBSD: releng/10.3/etc/group 256366 2013-10-12 06:08:18Z rpaulo $
+# $FreeBSD: releng/11.0/etc/group 294896 2016-01-27 06:28:56Z araujo $
 #
 wheel:*:0:root,cunnie
 daemon:*:1:
@@ -17,6 +17,7 @@ sshd:*:22:
 smmsp:*:25:
 mailnull:*:26:
 guest:*:31:
+video:*:44:
 bind:*:53:
 unbound:*:59:
 proxy:*:62:
@@ -28,6 +29,7 @@ dialer:*:68:
 network:*:69:
 audit:*:77:
 www:*:80:cunnie
+_ypldap:*:160:
 hast:*:845:
 nogroup:*:65533:
 nobody:*:65534:

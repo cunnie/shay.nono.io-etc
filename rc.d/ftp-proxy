@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/rc.d/ftp-proxy 274327 2014-11-09 20:08:43Z jpaetzel $
+# $FreeBSD: releng/11.0/etc/rc.d/ftp-proxy 298514 2016-04-23 16:10:54Z lme $
 #
 
 # PROVIDE: ftp-proxy
@@ -10,6 +10,7 @@
 . /etc/rc.subr
 
 name="ftpproxy"
+desc="Internet File Transfer Protocol proxy daemon"
 rcvar="ftpproxy_enable"
 command="/usr/sbin/ftp-proxy"
 

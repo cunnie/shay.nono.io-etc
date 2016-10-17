@@ -1,16 +1,17 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/rc.d/ipmon 255450 2013-09-10 13:48:33Z cy $
+# $FreeBSD: releng/11.0/etc/rc.d/ipmon 298514 2016-04-23 16:10:54Z lme $
 #
 
 # PROVIDE: ipmon
-# REQUIRE: FILESYSTEMS hostname sysctl FILESYSTEMS ipfilter
+# REQUIRE: FILESYSTEMS hostname sysctl ipfilter
 # BEFORE:  SERVERS
 # KEYWORD: nojail
 
 . /etc/rc.subr
 
 name="ipmon"
+desc="Monitors /dev/ipl for logged packets"
 rcvar="ipmon_enable"
 command="/sbin/${name}"
 start_precmd="ipmon_precmd"

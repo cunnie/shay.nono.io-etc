@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/rc.d/gssd 272861 2014-10-09 23:33:33Z hrs $
+# $FreeBSD: releng/11.0/etc/rc.d/gssd 298514 2016-04-23 16:10:54Z lme $
 #
 
 # PROVIDE: gssd
@@ -10,6 +10,7 @@
 . /etc/rc.subr
 
 name=gssd
+desc="Generic Security Services Daemon"
 rcvar=gssd_enable
 
 load_rc_config $name

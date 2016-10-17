@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/rc.d/othermta 294785 2016-01-26 08:58:59Z des $
+# $FreeBSD: releng/11.0/etc/rc.d/othermta 290008 2015-10-26 15:16:27Z des $
 #
 
 # PROVIDE: mail

@@ -9,7 +9,7 @@
 # forth in the LICENSE file which can be found at the top level of
 # the sendmail distribution.
 #
-# $FreeBSD: releng/10.3/contrib/sendmail/cf/m4/cfhead.m4 285303 2015-07-09 05:23:17Z gshapiro $
+# $FreeBSD: releng/11.0/contrib/sendmail/cf/m4/cfhead.m4 285229 2015-07-07 02:59:02Z gshapiro $
 #
 
 ######################################################################
@@ -17,9 +17,6 @@
 #####
 #####		SENDMAIL CONFIGURATION FILE
 #####
-##### built by root@amd64-builder.daemonology.net
-##### in /usr/obj/usr/src/etc/sendmail
-##### using /usr/src/etc/sendmail/../../contrib/sendmail/cf/ as configuration include directory
 #####
 ######################################################################
 #####
@@ -30,7 +27,7 @@
 
 #####  $Id: cfhead.m4,v 8.122 2013-11-22 20:51:13 ca Exp $  #####
 #####  $Id: cf.m4,v 8.33 2013-11-22 20:51:13 ca Exp $  #####
-#####  $FreeBSD: releng/10.3/etc/sendmail/freebsd.submit.mc 285304 2015-07-09 05:25:47Z gshapiro $  #####
+#####  $FreeBSD: releng/11.0/etc/sendmail/freebsd.submit.mc 285230 2015-07-07 03:00:57Z gshapiro $  #####
 #####  $Id: msp.m4,v 1.34 2013-11-22 20:51:11 ca Exp $  #####
 
 #####  $Id: no_default_msa.m4,v 8.3 2013-11-22 20:51:11 ca Exp $  #####

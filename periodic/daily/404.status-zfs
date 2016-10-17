@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/periodic/daily/404.status-zfs 231171 2012-02-08 00:08:21Z gjb $
+# $FreeBSD: releng/11.0/etc/periodic/daily/404.status-zfs 231171 2012-02-08 00:08:21Z gjb $
 #
 
 # If there is a global system configuration file, suck it in.

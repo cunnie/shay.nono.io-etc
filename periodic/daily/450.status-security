@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/periodic/daily/450.status-security 252205 2013-06-25 15:45:31Z jhb $
+# $FreeBSD: releng/11.0/etc/periodic/daily/450.status-security 252205 2013-06-25 15:45:31Z jhb $
 #
 
 # If there is a global system configuration file, suck it in.

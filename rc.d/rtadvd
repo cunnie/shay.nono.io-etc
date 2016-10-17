@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/rc.d/rtadvd 262557 2014-02-27 13:19:17Z des $
+# $FreeBSD: releng/11.0/etc/rc.d/rtadvd 298514 2016-04-23 16:10:54Z lme $
 #
 
 # PROVIDE: rtadvd
@@ -12,6 +12,7 @@
 . /etc/network.subr
 
 name="rtadvd"
+desc="Router advertisement daemon"
 rcvar="rtadvd_enable"
 command="/usr/sbin/${name}"
 extra_commands="reload"

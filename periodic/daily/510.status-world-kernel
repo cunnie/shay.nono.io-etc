@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/periodic/daily/510.status-world-kernel 277520 2015-01-22 02:24:09Z gjb $
+# $FreeBSD: releng/11.0/etc/periodic/daily/510.status-world-kernel 277216 2015-01-15 19:52:19Z gjb $
 #
 # Check that the running userland and kernel versions are in sync.
 

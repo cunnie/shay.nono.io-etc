@@ -23,7 +23,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/10.3/etc/rc.firewall 287091 2015-08-24 03:51:18Z julian $
+# $FreeBSD: releng/11.0/etc/rc.firewall 284920 2015-06-29 07:43:09Z julian $
 #
 
 #

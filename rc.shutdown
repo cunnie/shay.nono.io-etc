@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/10.3/etc/rc.shutdown 294785 2016-01-26 08:58:59Z des $
+# $FreeBSD: releng/11.0/etc/rc.shutdown 290008 2015-10-26 15:16:27Z des $
 #
 
 # Site-specific closing actions for daemons run by init on shutdown,

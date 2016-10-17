@@ -1,4 +1,4 @@
-# $FreeBSD: releng/10.3/etc/mtree/BSD.debug.dist 274344 2014-11-10 14:26:56Z emaste $
+# $FreeBSD: releng/11.0/etc/mtree/BSD.debug.dist 298997 2016-05-03 18:26:07Z jhb $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -9,8 +9,14 @@
         bin
         ..
         boot
+            kernel
+            ..
+            modules
+            ..
         ..
         lib
+            casper
+            ..
             geom
             ..
         ..
@@ -21,17 +27,17 @@
         usr
             bin
             ..
-            games
-            ..
             lib
+                clang
+                    3.8.0
+                        lib
+                            freebsd
+                            ..
+                        ..
+                    ..
+                ..
                 engines
                 ..
-                i18n
-                ..
-                private
-                ..
-            ..
-            lib32
                 i18n
                 ..
                 private
@@ -50,6 +56,8 @@
                 ..
             ..
             sbin
+            ..
+            tests
             ..
         ..
     ..

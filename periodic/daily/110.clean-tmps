@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/10.3/etc/periodic/daily/110.clean-tmps 272430 2014-10-02 18:05:00Z bdrewery $
+# $FreeBSD: releng/11.0/etc/periodic/daily/110.clean-tmps 271321 2014-09-09 17:03:58Z bdrewery $
 #
 # Perform temporary directory cleaning so that long-lived systems
 # don't end up with excessively old files there.
