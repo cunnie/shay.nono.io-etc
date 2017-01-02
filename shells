@@ -7,6 +7,6 @@
 /bin/sh
 /bin/csh
 /bin/tcsh
+/usr/local/libexec/git-core/git-shell
 /usr/local/bin/bash
 /usr/local/bin/rbash
-/usr/local/libexec/git-core/git-shell
