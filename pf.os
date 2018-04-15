@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/pf.os 258865 2013-12-03 04:32:02Z eadler $
+# $FreeBSD: releng/11.1/etc/pf.os 258865 2013-12-03 04:32:02Z eadler $
 # $OpenBSD: pf.os,v 1.26 2012/08/03 12:25:16 jsg Exp $
 # passive OS fingerprinting
 # -------------------------

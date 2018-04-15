@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/gettytab 262955 2014-03-09 20:51:14Z marcel $
+# $FreeBSD: releng/11.1/etc/gettytab 262955 2014-03-09 20:51:14Z marcel $
 #	from: @(#)gettytab	5.14 (Berkeley) 3/27/91
 #
 # Most of the table entries here are just copies of the old getty table,

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/ccd 298539 2016-04-24 12:07:44Z se $
+# $FreeBSD: releng/11.1/etc/rc.d/ccd 298539 2016-04-24 12:07:44Z se $
 #
 
 # PROVIDE: disks

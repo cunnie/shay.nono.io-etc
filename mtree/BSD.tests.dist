@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/mtree/BSD.tests.dist 300922 2016-05-29 01:38:12Z ngie $
+# $FreeBSD: releng/11.1/etc/mtree/BSD.tests.dist 319384 2017-06-01 06:41:24Z ngie $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -23,6 +23,8 @@
         pax
         ..
         pkill
+        ..
+        pwait
         ..
         sh
             builtins
@@ -308,9 +310,13 @@
             ttyio
             ..
         ..
+        libcam
+        ..
         libcrypt
         ..
         libdevdctl
+        ..
+        libkvm
         ..
         libmp
         ..
@@ -384,6 +390,10 @@
         ..
         file
         ..
+        fs
+            tmpfs
+            ..
+        ..
         geom
             class
                 concat
@@ -419,6 +429,8 @@
             ..
         ..
         kqueue
+            libkqueue
+            ..
         ..
         mac
             bsdextended
@@ -576,11 +588,13 @@
                 ..
             ..
         ..
-	bsdcat
-	..
+        bsdcat
+        ..
         calendar
         ..
         cmp
+        ..
+        compress
         ..
         cpio
         ..
@@ -593,6 +607,8 @@
         dirname
         ..
         file2c
+        ..
+        getconf
         ..
         grep
         ..
@@ -616,6 +632,8 @@
         ..
         opensm
         ..
+        pr
+        ..
         printf
         ..
         sdiff
@@ -625,6 +643,8 @@
             ..
         ..
         soelim
+        ..
+        tail
         ..
         tar
         ..
@@ -639,6 +659,8 @@
         uudecode
         ..
         uuencode
+        ..
+        uniq
         ..
         xargs
         ..

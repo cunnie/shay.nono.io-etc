@@ -26,7 +26,7 @@
 #
 # Configure static ARP table
 #
-# $FreeBSD: releng/11.0/etc/rc.d/static_arp 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/11.1/etc/rc.d/static_arp 298514 2016-04-23 16:10:54Z lme $
 #
 
 # PROVIDE: static_arp

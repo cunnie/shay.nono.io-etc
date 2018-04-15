@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/zfs 299839 2016-05-15 04:38:50Z ngie $
+# $FreeBSD: releng/11.1/etc/rc.d/zfs 308243 2016-11-03 08:34:24Z avg $
 #
 
 # PROVIDE: zfs
-# REQUIRE: mountcritlocal
+# REQUIRE: zfsbe
 # BEFORE: FILESYSTEMS var
 
 . /etc/rc.subr

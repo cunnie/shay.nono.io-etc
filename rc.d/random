@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/random 301028 2016-05-31 08:31:34Z trasz $
+# $FreeBSD: releng/11.1/etc/rc.d/random 319275 2017-05-31 05:00:02Z delphij $
 #
 
 # PROVIDE: random
@@ -20,12 +20,14 @@ saveseed_cmd="${name}_stop"
 
 save_dev_random()
 {
+	oumask=`umask`
+	umask 077
 	for f ; do
-		if :>>"$f" ; then
-			debug "saving entropy to $f"
-			dd if=/dev/random of="$f" bs=4096 count=1 2>/dev/null
-		fi
+		debug "saving entropy to $f"
+		dd if=/dev/random of="$f" bs=4096 count=1 status=none &&
+			chmod 600 "$f"
 	done
+	umask ${oumask}
 }
 
 feed_dev_random()

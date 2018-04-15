@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/ntpdate 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/11.1/etc/rc.d/ntpdate 314531 2017-03-02 01:23:17Z ian $
 #
 
 # PROVIDE: ntpdate
@@ -20,7 +20,7 @@ ntpdate_start()
 	if [ -z "$ntpdate_hosts" -a -f "$ntpdate_config" ]; then
 		ntpdate_hosts=`awk '
 			/^server[ \t]*127.127/      {next}
-			/^(server|peer)/            {
+			/^(server|peer|pool)/       {
 			    if ($2 ~/^-/)           {print $3}
 			    else                    {print $2}}
 		' < "$ntpdate_config"`

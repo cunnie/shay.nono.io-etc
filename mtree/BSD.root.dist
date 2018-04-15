@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/mtree/BSD.root.dist 296047 2016-02-25 18:23:40Z oshogbo $
+# $FreeBSD: releng/11.1/etc/mtree/BSD.root.dist 319617 2017-06-06 08:55:11Z trasz $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -31,6 +31,8 @@
         bluetooth
         ..
         casper
+        ..
+        cron.d
         ..
         defaults
         ..
@@ -76,6 +78,8 @@
         ..
         ssl
         ..
+        syslog.d
+        ..
         zfs
         ..
     ..
@@ -92,6 +96,8 @@
     media
     ..
     mnt
+    ..
+    net
     ..
     proc            mode=0555
     ..

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/ipropd_master 270782 2014-08-29 07:51:47Z hrs $
+# $FreeBSD: releng/11.1/etc/rc.d/ipropd_master 270782 2014-08-29 07:51:47Z hrs $
 #
 
 # PROVIDE: ipropd_master

@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/ftpusers 256365 2013-10-12 06:06:53Z rpaulo $
+# $FreeBSD: releng/11.1/etc/ftpusers 256365 2013-10-12 06:06:53Z rpaulo $
 #
 # list of users disallowed any ftp access.
 # read by ftpd(8).

@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/mtree/BSD.usr.dist 302329 2016-07-03 18:21:11Z bapt $
+# $FreeBSD: releng/11.1/etc/mtree/BSD.usr.dist 316423 2017-04-02 17:24:58Z dim $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -19,7 +19,7 @@
         aout
         ..
         clang
-            3.8.0
+            4.0.0
                 include
                     sanitizer
                     ..
@@ -505,8 +505,6 @@
                 UTF
                 ..
             ..
-        ..
-        info
         ..
         keys
             pkg

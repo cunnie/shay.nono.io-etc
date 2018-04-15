@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/autofs/include_ldap 280321 2015-03-21 09:42:37Z trasz $
+# $FreeBSD: releng/11.1/etc/autofs/include_ldap 280321 2015-03-21 09:42:37Z trasz $
 #
 
 # Modify this to suit your needs.  The "$1" is the map name, eg. "auto_master".

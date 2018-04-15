@@ -25,7 +25,7 @@
 # SUCH DAMAGE.
 #
 #	@(#)rc	5.27 (Berkeley) 6/5/91
-# $FreeBSD: releng/11.0/etc/rc 293240 2016-01-06 17:13:40Z imp $
+# $FreeBSD: releng/11.1/etc/rc 318652 2017-05-22 16:07:17Z gjb $
 #
 
 # System startup script run by init on autoboot
@@ -135,16 +135,16 @@ done
 # Note: this assumes firstboot_sentinel is on / when we have
 # a read-only /, or that it is on media that's writable.
 if [ -e ${firstboot_sentinel} ]; then
-	[ ${root_rw_mount} = "yes" ] || mount -uw /
+	[ ${root_rw_mount#[Yy][Ee][Ss]} = "" ] || mount -uw /
 	chflags -R 0 ${firstboot_sentinel}
 	rm -rf ${firstboot_sentinel}
 	if [ -e ${firstboot_sentinel}-reboot ]; then
 		chflags -R 0 ${firstboot_sentinel}-reboot
 		rm -rf ${firstboot_sentinel}-reboot
-		[ ${root_rw_mount} = "yes" ] || mount -ur /
+		[ ${root_rw_mount#[Yy][Ee][Ss]} = "" ] || mount -ur /
 		kill -INT 1
 	fi
-	[ ${root_rw_mount} = "yes" ] || mount -ur /
+	[ ${root_rw_mount#[Yy][Ee][Ss]} = "" ] || mount -ur /
 fi
 
 echo ''

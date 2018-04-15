@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/mountcritlocal 299349 2016-05-10 08:44:44Z trasz $
+# $FreeBSD: releng/11.1/etc/rc.d/mountcritlocal 299349 2016-05-10 08:44:44Z trasz $
 #
 
 # PROVIDE: mountcritlocal

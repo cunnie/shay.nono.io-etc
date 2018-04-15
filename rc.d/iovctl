@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/iovctl 284891 2015-06-27 18:01:50Z pkelsey $
+# $FreeBSD: releng/11.1/etc/rc.d/iovctl 284891 2015-06-27 18:01:50Z pkelsey $
 #
 
 # PROVIDE: iovctl

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/dhclient 301068 2016-05-31 18:40:47Z vangyzen $
+# $FreeBSD: releng/11.1/etc/rc.d/dhclient 301068 2016-05-31 18:40:47Z vangyzen $
 #
 
 # PROVIDE: dhclient

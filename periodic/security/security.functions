@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.0/etc/periodic/security/security.functions 295032 2016-01-29 01:54:32Z marius $
+# $FreeBSD: releng/11.1/etc/periodic/security/security.functions 295032 2016-01-29 01:54:32Z marius $
 #
 
 # This is a library file, so we only try to do something when sourced.

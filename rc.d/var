@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.0/etc/rc.d/var 299839 2016-05-15 04:38:50Z ngie $
+# $FreeBSD: releng/11.1/etc/rc.d/var 299839 2016-05-15 04:38:50Z ngie $
 #
 
 # PROVIDE: var

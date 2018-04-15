@@ -1,6 +1,6 @@
-# $FreeBSD: releng/11.0/etc/group 294896 2016-01-27 06:28:56Z araujo $
+# $FreeBSD: releng/11.1/etc/group 294896 2016-01-27 06:28:56Z araujo $
 #
-wheel:*:0:root,cunnie
+wheel:*:0:root,cunnie,ping,ping
 daemon:*:1:
 kmem:*:2:
 sys:*:3:
@@ -39,3 +39,5 @@ _tss:*:601:
 avahi:*:558:
 cups:*:193:
 git_daemon:*:964:
+ping:*:2001:
+dhcpd:*:136:

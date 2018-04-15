@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/savecore 298784 2016-04-29 12:23:56Z bapt $
+# $FreeBSD: releng/11.1/etc/rc.d/savecore 298784 2016-04-29 12:23:56Z bapt $
 #
 
 # PROVIDE: savecore

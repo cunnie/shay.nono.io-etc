@@ -2,7 +2,7 @@
 #
 # Configure routing and miscellaneous network tunables
 #
-# $FreeBSD: releng/11.0/etc/rc.d/routing 301207 2016-06-02 15:31:24Z asomers $
+# $FreeBSD: releng/11.1/etc/rc.d/routing 318965 2017-05-26 19:19:47Z n_hibma $
 #
 
 # PROVIDE: routing
@@ -286,7 +286,7 @@ static_inet6()
 	esac
 
 	ifconfig ${ipv6_default_interface} inet6 defaultif
-	sysctl net.inet6.ip6.use_defaultzone=1
+	${SYSCTL} net.inet6.ip6.use_defaultzone=1 > /dev/null
 }
 
 static_atm()

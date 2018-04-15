@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/SERVERS 298844 2016-04-30 09:50:08Z ngie $
+# $FreeBSD: releng/11.1/etc/rc.d/SERVERS 298844 2016-04-30 09:50:08Z ngie $
 #
 
 # PROVIDE: SERVERS

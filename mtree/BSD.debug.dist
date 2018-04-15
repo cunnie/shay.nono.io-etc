@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/mtree/BSD.debug.dist 298997 2016-05-03 18:26:07Z jhb $
+# $FreeBSD: releng/11.1/etc/mtree/BSD.debug.dist 316423 2017-04-02 17:24:58Z dim $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -29,7 +29,7 @@
             ..
             lib
                 clang
-                    3.8.0
+                    4.0.0
                         lib
                             freebsd
                             ..

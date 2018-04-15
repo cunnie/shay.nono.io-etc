@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/jail 302955 2016-07-17 14:07:51Z jamie $
+# $FreeBSD: releng/11.1/etc/rc.d/jail 310009 2016-12-13 04:47:21Z dteske $
 #
 
 # PROVIDE: jail
@@ -147,7 +147,8 @@ parse_options()
 	#
 	# To relieve confusion, show a warning message.
 	#
-	_confwarn=1
+	: ${jail_confwarn:=YES}
+	checkyesno jail_confwarn && _confwarn=1
 	if [ -r "$jail_conf" -o -r "$_jconf" ]; then
 		if ! checkyesno jail_parallel_start; then
 			warn "$_conf is created and used for jail $_j."
@@ -260,6 +261,7 @@ parse_options()
 
 		extract_var $_jv set_hostname_allow allow.set_hostname YN NO
 		extract_var $_jv sysvipc_allow allow.sysvipc YN NO
+		extract_var $_jv enforce_statfs enforce_statfs - 2
 		extract_var $_jv osreldate osreldate
 		extract_var $_jv osrelease osrelease
 		for _p in $_parameters; do

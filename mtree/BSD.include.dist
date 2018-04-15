@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/mtree/BSD.include.dist 301778 2016-06-10 06:04:53Z imp $
+# $FreeBSD: releng/11.1/etc/mtree/BSD.include.dist 318197 2017-05-11 20:55:11Z marius $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -110,11 +110,15 @@
         ..
         ciss
         ..
+        evdev
+        ..
         filemon
         ..
         firewire
         ..
         hwpmc
+        ..
+        hyperv
         ..
         ic
         ..
@@ -125,6 +129,8 @@
         lmc
         ..
         mfi
+        ..
+        mmc
         ..
         mpt
             mpilib

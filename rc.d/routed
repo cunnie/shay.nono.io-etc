@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.0/etc/rc.d/routed 299843 2016-05-15 05:45:54Z ngie $
+# $FreeBSD: releng/11.1/etc/rc.d/routed 299843 2016-05-15 05:45:54Z ngie $
 #
 
 # PROVIDE: routed

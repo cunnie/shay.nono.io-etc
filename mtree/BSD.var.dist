@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.0/etc/mtree/BSD.var.dist 300906 2016-05-28 17:43:40Z asomers $
+# $FreeBSD: releng/11.1/etc/mtree/BSD.var.dist 313742 2017-02-14 21:02:17Z asomers $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -28,7 +28,7 @@
 /set gname=wheel
     backups
     ..
-    cache		mode=0755
+    cache               mode=0755
     ..
     crash
     ..
