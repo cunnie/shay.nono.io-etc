@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.1/etc/auto_master 310007 2016-12-13 04:44:06Z dteske $
+# $FreeBSD: releng/11.2/etc/auto_master 310007 2016-12-13 04:44:06Z dteske $
 #
 # Automounter master map, see auto_master(5) for details.
 #

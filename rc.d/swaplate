@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/swaplate 308865 2016-11-19 20:02:49Z jilles $
+# $FreeBSD: releng/11.2/etc/rc.d/swaplate 308865 2016-11-19 20:02:49Z jilles $
 #
 
 # PROVIDE: swaplate

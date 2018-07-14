@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/jail 310009 2016-12-13 04:47:21Z dteske $
+# $FreeBSD: releng/11.2/etc/rc.d/jail 310009 2016-12-13 04:47:21Z dteske $
 #
 
 # PROVIDE: jail

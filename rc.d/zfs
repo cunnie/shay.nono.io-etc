@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/zfs 308243 2016-11-03 08:34:24Z avg $
+# $FreeBSD: releng/11.2/etc/rc.d/zfs 308243 2016-11-03 08:34:24Z avg $
 #
 
 # PROVIDE: zfs

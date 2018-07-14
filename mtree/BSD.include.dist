@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.1/etc/mtree/BSD.include.dist 318197 2017-05-11 20:55:11Z marius $
+# $FreeBSD: releng/11.2/etc/mtree/BSD.include.dist 331586 2018-03-26 20:59:26Z hselasky $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -129,6 +129,8 @@
         lmc
         ..
         mfi
+        ..
+        mlx5
         ..
         mmc
         ..

@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.1/etc/mtree/BSD.root.dist 319617 2017-06-06 08:55:11Z trasz $
+# $FreeBSD: releng/11.2/etc/mtree/BSD.root.dist 332116 2018-04-06 17:04:21Z kevans $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -11,6 +11,8 @@
         defaults
         ..
         dtb
+            overlays              tags=package=runtime
+            ..
         ..
         firmware
         ..

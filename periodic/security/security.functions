@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.1/etc/periodic/security/security.functions 295032 2016-01-29 01:54:32Z marius $
+# $FreeBSD: releng/11.2/etc/periodic/security/security.functions 324060 2017-09-27 15:05:49Z asomers $
 #
 
 # This is a library file, so we only try to do something when sourced.
@@ -48,6 +48,7 @@ rc=0
 #   LABEL is the base name of the ${LOG}/${label}.{today,yesterday} files.
 
 check_diff() {
+  unset IFS
   rc=0
   if [ "$1" = "new_only" ]; then
     shift

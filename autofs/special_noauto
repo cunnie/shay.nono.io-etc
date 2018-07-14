@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/autofs/special_noauto 279955 2015-03-13 12:44:46Z trasz $
+# $FreeBSD: releng/11.2/etc/autofs/special_noauto 279955 2015-03-13 12:44:46Z trasz $
 #
 
 print_available() {

@@ -16,7 +16,7 @@
 # Kerberos services are for Kerberos v4, and are unofficial.  Sites running
 # v5 should uncomment v5 entries and comment v4 entries.
 #
-# $FreeBSD: releng/11.1/etc/services 292694 2015-12-24 16:35:28Z jlh $
+# $FreeBSD: releng/11.2/etc/services 327955 2018-01-14 05:05:06Z bryanv $
 #	From: @(#)services	5.8 (Berkeley) 5/9/91
 #
 # WELL KNOWN PORT NUMBERS
@@ -2291,6 +2291,7 @@ ipfix		4739/udp   #IP Flow Info Export
 ipfixs		4740/sctp  #ipfix protocol over DTLS
 ipfixs		4740/tcp   #ipfix protocol over TLS
 ipfixs		4740/udp   #ipfix protocol over DTLS
+vxlan		4789/udp   #Virtual eXtensible Local Area Network (VXLAN)
 commplex-main	5000/tcp
 commplex-main	5000/udp
 commplex-link	5001/tcp

@@ -1,6 +1,6 @@
 #!/bin/sh -
 #
-# $FreeBSD: releng/11.1/etc/pccard_ether 310233 2016-12-18 20:40:22Z avos $
+# $FreeBSD: releng/11.2/etc/pccard_ether 310233 2016-12-18 20:40:22Z avos $
 #
 # pccard_ether interfacename [start|stop|restart]
 #

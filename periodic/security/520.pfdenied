@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.1/etc/periodic/security/520.pfdenied 307172 2016-10-13 03:08:32Z lidl $
+# $FreeBSD: releng/11.2/etc/periodic/security/520.pfdenied 307172 2016-10-13 03:08:32Z lidl $
 #
 
 # If there is a global system configuration file, suck it in.

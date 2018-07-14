@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/ntpdate 314531 2017-03-02 01:23:17Z ian $
+# $FreeBSD: releng/11.2/etc/rc.d/ntpdate 314531 2017-03-02 01:23:17Z ian $
 #
 
 # PROVIDE: ntpdate

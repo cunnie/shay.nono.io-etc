@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/fsck 299349 2016-05-10 08:44:44Z trasz $
+# $FreeBSD: releng/11.2/etc/rc.d/fsck 331216 2018-03-19 17:37:51Z dab $
 #
 
 # PROVIDE: fsck
@@ -57,7 +57,7 @@ fsck_start()
 			echo "Reboot failed; help!"
 			stop_boot
 			;;
-		8)
+		8|16)
 			if checkyesno fsck_y_enable; then
 				echo "File system preen failed, trying fsck -y ${fsck_y_flags}"
 				fsck -y ${fsck_y_flags}

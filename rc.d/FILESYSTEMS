@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/FILESYSTEMS 299839 2016-05-15 04:38:50Z ngie $
+# $FreeBSD: releng/11.2/etc/rc.d/FILESYSTEMS 299839 2016-05-15 04:38:50Z ngie $
 #
 
 # PROVIDE: FILESYSTEMS

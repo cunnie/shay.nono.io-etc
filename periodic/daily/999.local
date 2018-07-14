@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/periodic/daily/999.local 316359 2017-04-01 16:22:07Z asomers $
+# $FreeBSD: releng/11.2/etc/periodic/daily/999.local 316359 2017-04-01 16:22:07Z asomers $
 #
 # Run the old /etc/daily.local script.  This is really for backwards
 # compatibility more than anything else.

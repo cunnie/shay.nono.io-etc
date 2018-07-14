@@ -1,10 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/automount 287951 2015-09-18 06:54:52Z trasz $
+# $FreeBSD: releng/11.2/etc/rc.d/automount 332584 2018-04-16 15:54:38Z trasz $
 #
 
 # PROVIDE: automount
 # REQUIRE: nfsclient automountd
+# BEFORE: DAEMON
 # KEYWORD: nojail shutdown
 
 . /etc/rc.subr

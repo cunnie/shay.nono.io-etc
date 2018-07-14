@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/periodic/daily/400.status-disks 290743 2015-11-13 06:20:27Z des $
+# $FreeBSD: releng/11.2/etc/periodic/daily/400.status-disks 290743 2015-11-13 06:20:27Z des $
 #
 
 # If there is a global system configuration file, suck it in.

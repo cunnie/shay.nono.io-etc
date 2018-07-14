@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.1/etc/rc.initdiskless 298887 2016-05-01 16:43:22Z pfg $
+# $FreeBSD: releng/11.2/etc/rc.initdiskless 327592 2018-01-05 19:12:36Z ian $
 
 # On entry to this script the entire system consists of a read-only root
 # mounted via NFS. The kernel has run BOOTP and configured an interface
@@ -195,10 +195,11 @@ handle_remount() { # $1 = mount point
     to_umount="$b ${to_umount}"
 }
 
-# Create a generic memory disk
-#
+# Create a generic memory disk.
+# The 'auto' parameter will attempt to use tmpfs(5), falls back to md(4).
+# $1 is size in 512-byte sectors, $2 is the mount point.
 mount_md() {
-    /sbin/mdmfs -S -i 4096 -s $1 -M md $2
+    /sbin/mdmfs -s $1 auto $2
 }
 
 # Create the memory filesystem if it has not already been created

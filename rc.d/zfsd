@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/zfsd 300906 2016-05-28 17:43:40Z asomers $
+# $FreeBSD: releng/11.2/etc/rc.d/zfsd 300906 2016-05-28 17:43:40Z asomers $
 #
 
 # PROVIDE: zfsd

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/periodic/daily/410.status-mfi 317857 2017-05-05 21:59:34Z asomers $
+# $FreeBSD: releng/11.2/etc/periodic/daily/410.status-mfi 317857 2017-05-05 21:59:34Z asomers $
 #
 
 # If there is a global system configuration file, suck it in.

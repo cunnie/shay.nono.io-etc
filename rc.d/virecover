@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/virecover 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/11.2/etc/rc.d/virecover 298514 2016-04-23 16:10:54Z lme $
 #
 
 # PROVIDE: virecover

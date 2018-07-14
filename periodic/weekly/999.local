@@ -1,6 +1,6 @@
 #!/bin/sh -
 #
-# $FreeBSD: releng/11.1/etc/periodic/weekly/999.local 316359 2017-04-01 16:22:07Z asomers $
+# $FreeBSD: releng/11.2/etc/periodic/weekly/999.local 316359 2017-04-01 16:22:07Z asomers $
 #
 
 # If there is a global system configuration file, suck it in.

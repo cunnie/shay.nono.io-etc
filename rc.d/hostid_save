@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.1/etc/rc.d/hostid_save 299844 2016-05-15 06:00:13Z ngie $
+# $FreeBSD: releng/11.2/etc/rc.d/hostid_save 299844 2016-05-15 06:00:13Z ngie $
 #
 
 # PROVIDE: hostid_save
