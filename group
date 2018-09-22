@@ -41,3 +41,4 @@ cups:*:193:
 git_daemon:*:964:
 ping:*:2001:
 dhcpd:*:136:
+mysql:*:88:
