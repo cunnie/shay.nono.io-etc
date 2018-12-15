@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/abi 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/abi 314373 2017-02-28 05:14:42Z glebius $
 #
 
 # PROVIDE: abi
@@ -43,25 +43,18 @@ linux_start()
 	fi
 }
 
-svr4_start()
-{
-	echo -n ' svr4'
-	load_kld -m svr4elf svr4
-}
-
 abi_start()
 {
 	local _echostop
 
 	_echostop=
-	if checkyesno sysvipc_enable || checkyesno linux_enable || checkyesno svr4_enable; then
+	if checkyesno sysvipc_enable || checkyesno linux_enable; then
 		echo -n 'Additional ABI support:'
 		_echostop=yes
 	fi
 
 	checkyesno sysvipc_enable && sysv_start
 	checkyesno linux_enable && linux_start
-	checkyesno svr4_enable && svr4_start
 
 	[ -n "${_echostop}" ] && echo '.'
 }

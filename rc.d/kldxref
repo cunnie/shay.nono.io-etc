@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/kldxref 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/kldxref 333491 2018-05-11 14:43:21Z trasz $
 #
 
 # PROVIDE: kldxref
@@ -24,8 +24,9 @@ kldxref_start() {
 	fi
 	IFS=';'
 	for MODULE_DIR in $MODULE_PATHS; do
-		if [ ! -f "$MODULE_DIR/linker.hints" ] ||
-		    checkyesno kldxref_clobber; then
+		if checkyesno kldxref_clobber ||
+		    [ ! -f "$MODULE_DIR/linker.hints" ] &&
+		    [ `echo ${MODULE_DIR}/*.ko` != "${MODULE_DIR}/*.ko" ]; then
 			echo "Building $MODULE_DIR/linker.hints"
 			kldxref "$MODULE_DIR"
 		fi

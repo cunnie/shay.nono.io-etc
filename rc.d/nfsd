@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/nfsd 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/nfsd 335566 2018-06-22 20:58:51Z rmacklem $
 #
 
 # PROVIDE: nfsd
-# REQUIRE: mountd hostname gssd nfsuserd
+# REQUIRE: mountcritremote mountd hostname gssd nfsuserd
 # KEYWORD: nojail shutdown
 
 . /etc/rc.subr
@@ -33,8 +33,7 @@ nfsd_precmd()
 		sysctl vfs.nfsd.nfs_privport=0 > /dev/null
 	fi
 
-	if checkyesno nfsv4_server_enable || \
-	    checkyesno nfs_server_managegids; then
+	if checkyesno nfs_server_managegids; then
 		force_depend nfsuserd || err 1 "Cannot run nfsuserd"
 	fi
 

@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.2/etc/rc.d/bluetooth 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/bluetooth 325287 2017-11-01 18:58:54Z cem $
 
 # PROVIDE: bluetooth
 # REQUIRE: DAEMON
@@ -287,7 +287,7 @@ bluetooth_start()
 	bluetooth_device_authentication_enable="0"
 	bluetooth_device_class="ff:01:0c"
 	bluetooth_device_connectable="1"
-	bluetooth_device_discoverable="1"
+	bluetooth_device_discoverable="0"
 	bluetooth_device_encryption_mode="0"
 	bluetooth_device_hci_debug_level="3"
 	bluetooth_device_l2cap_debug_level="3"

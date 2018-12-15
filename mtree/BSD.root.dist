@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.2/etc/mtree/BSD.root.dist 332116 2018-04-06 17:04:21Z kevans $
+# $FreeBSD: releng/12.0/etc/mtree/BSD.root.dist 331212 2018-03-19 16:16:12Z kevans $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -16,6 +16,8 @@
         ..
         firmware
         ..
+        lua
+        ..
         kernel
         ..
         modules
@@ -31,8 +33,6 @@
         autofs
         ..
         bluetooth
-        ..
-        casper
         ..
         cron.d
         ..
@@ -73,8 +73,6 @@
         rc.d
         ..
         security
-        ..
-        skel
         ..
         ssh
         ..

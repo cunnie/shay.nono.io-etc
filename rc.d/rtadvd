@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/rtadvd 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/rtadvd 320618 2017-07-03 20:36:58Z kp $
 #
 
 # PROVIDE: rtadvd
 # REQUIRE: DAEMON
 # BEFORE:  LOGIN
-# KEYWORD: nojail shutdown
+# KEYWORD: nojailvnet shutdown
 
 . /etc/rc.subr
 . /etc/network.subr

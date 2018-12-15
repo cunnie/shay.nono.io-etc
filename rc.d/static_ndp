@@ -1,7 +1,6 @@
 #!/bin/sh
 #
-# Copyright (c) 2011  Xin Li <delphij@FreeBSD.org>
-# All rights reserved.
+# Copyright (c) 2011  Xin LI <delphij@FreeBSD.org>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -26,12 +25,12 @@
 #
 # Configure static NDP table
 #
-# $FreeBSD: releng/11.2/etc/rc.d/static_ndp 226657 2011-10-23 10:17:42Z mm $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/static_ndp 333449 2018-05-10 06:41:08Z delphij $
 #
 
 # PROVIDE: static_ndp
 # REQUIRE: netif
-# KEYWORD: nojail
+# KEYWORD: nojailvnet
 
 . /etc/rc.subr
 . /etc/network.subr

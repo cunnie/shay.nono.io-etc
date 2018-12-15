@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.2/etc/rc.initdiskless 327592 2018-01-05 19:12:36Z ian $
+# $FreeBSD: releng/12.0/libexec/rc/rc.initdiskless 339413 2018-10-17 16:49:11Z bz $
 
 # On entry to this script the entire system consists of a read-only root
 # mounted via NFS. The kernel has run BOOTP and configured an interface
@@ -67,7 +67,7 @@
 # /conf/T/M/remount
 #		The contents of the file is a mount command. E.g. if
 # 		/conf/1.2.3.4/foo/remount contains "mount -o ro /dev/ad0s3",
-#		then /dev/ad0s3 will be be mounted on /conf/1.2.3.4/foo/
+#		then /dev/ad0s3 will be mounted on /conf/1.2.3.4/foo/
 #
 # /conf/T/M/remount_optional
 #		If this file exists, then failure to execute the mount

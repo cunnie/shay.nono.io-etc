@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/ipsec 326415 2017-11-30 21:38:09Z kp $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/ipsec 320696 2017-07-05 20:00:58Z kp $
 #
 
 # PROVIDE: ipsec

@@ -16,7 +16,7 @@
 # Kerberos services are for Kerberos v4, and are unofficial.  Sites running
 # v5 should uncomment v5 entries and comment v4 entries.
 #
-# $FreeBSD: releng/11.2/etc/services 327955 2018-01-14 05:05:06Z bryanv $
+# $FreeBSD: releng/12.0/usr.sbin/services_mkdb/services 338503 2018-09-06 18:34:11Z obrien $
 #	From: @(#)services	5.8 (Berkeley) 5/9/91
 #
 # WELL KNOWN PORT NUMBERS
@@ -873,8 +873,8 @@ isakmp		500/tcp
 isakmp		500/udp
 stmf		501/tcp
 stmf		501/udp
-asa-appl-proto	502/tcp
-asa-appl-proto	502/udp
+mbap		502/tcp    # Modbus Application Protocol
+mbap		502/udp    # Modbus Application Protocol
 intrinsa	503/tcp
 intrinsa	503/udp
 citadel		504/tcp
@@ -1414,6 +1414,8 @@ mdbs_daemon	800/tcp
 mdbs_daemon	800/udp
 device		801/tcp
 device		801/udp
+mbap-s		802/tcp    # Modbus Application Protocol Secure
+mbap-s		802/udp    # Modbus Application Protocol Secure
 fcp-udp		810/tcp    #FCP
 fcp-udp		810/udp    #FCP Datagram
 itm-mcell-s	828/tcp
@@ -2236,6 +2238,8 @@ vat-control	3457/tcp   #VAT default control
 vat-control	3457/udp   #VAT default control
 nut		3493/tcp   #Network UPS Tools
 nut		3493/udp   #Network UPS Tools
+lsp-ping	3503/tcp   #MPLS LSP-echo (RFC8029)
+lsp-ping	3503/udp   #MPLS LSP-echo (RFC8029)
 m2pa		3565/sctp  #M2PA
 m2pa		3565/tcp   #M2PA
 tsp		3653/tcp   #Tunnel Setup Protocol
@@ -2451,6 +2455,7 @@ aurora		9084/sctp  #IBM AURORA Performance Visualizer
 aurora		9084/tcp   #IBM AURORA Performance Visualizer
 aurora		9084/udp   #IBM AURORA Performance Visualizer
 jetdirect	9100/tcp   #HP JetDirect card
+prom-sysctl	9124/tcp   #prometheus_sysctl_exporter(8)
 git		9418/tcp   #git pack transfer service
 git		9418/udp   #git pack transfer service
 man		9535/tcp

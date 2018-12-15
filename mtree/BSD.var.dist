@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.2/etc/mtree/BSD.var.dist 313742 2017-02-14 21:02:17Z asomers $
+# $FreeBSD: releng/12.0/etc/mtree/BSD.var.dist 337382 2018-08-06 16:22:01Z markj $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -46,7 +46,7 @@
         ..
         ipf             mode=0700
         ..
-        ntp             mode=0700
+        ntp             uname=ntpd gname=ntpd
         ..
         pkg
         ..
@@ -74,6 +74,8 @@
     preserve
     ..
     run
+        dhclient
+        ..
         ppp             gname=network mode=0770
         ..
         wpa_supplicant

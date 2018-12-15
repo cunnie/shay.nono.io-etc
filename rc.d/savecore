@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/savecore 298784 2016-04-29 12:23:56Z bapt $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/savecore 319477 2017-06-01 21:23:04Z vangyzen $
 #
 
 # PROVIDE: savecore
@@ -70,7 +70,7 @@ savecore_start()
 	if savecore -C "${dev}" >/dev/null; then
 		savecore ${savecore_flags} ${dumpdir} ${dumpdev}
 		if checkyesno crashinfo_enable; then
-			${crashinfo_program} -d ${dumpdir}
+			${crashinfo_program} -b -d ${dumpdir}
 		fi
 		sync
 	else

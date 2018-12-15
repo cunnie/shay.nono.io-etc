@@ -2,7 +2,6 @@
 #
 # Copyright (c) 2007 Pawel Jakub Dawidek <pjd@FreeBSD.org>
 # Copyright (c) 2015 Xin LI <delphij@FreeBSD.org>
-# All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -25,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.2/etc/rc.d/hostid 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/hostid 333449 2018-05-10 06:41:08Z delphij $
 #
 
 # PROVIDE: hostid

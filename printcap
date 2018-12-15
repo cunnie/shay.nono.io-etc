@@ -1,5 +1,5 @@
 #	@(#)printcap	5.3 (Berkeley) 6/30/90
-# $FreeBSD: releng/11.2/etc/printcap 130151 2004-06-06 11:46:29Z schweikh $
+# $FreeBSD: releng/12.0/usr.sbin/lpr/lpd/printcap 338822 2018-09-20 09:21:05Z brd $
 
 #
 # This enables a simple local "raw" printer, hooked up to the first
@@ -22,7 +22,7 @@
 #
 # Do also refer to the "printing" section of the handbook.
 #
-#	http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/printing.html
+#	https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/printing.html
 #
 # A local copy can be found under
 #

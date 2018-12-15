@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/dumpon 299839 2016-05-15 04:38:50Z ngie $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/dumpon 324965 2017-10-25 00:51:00Z markj $
 #
 
 # PROVIDE: dumpon
@@ -16,7 +16,15 @@ stop_cmd="dumpon_stop"
 
 dumpon_try()
 {
-	if /sbin/dumpon "${1}" ; then
+	local flags
+
+	flags=${dumpon_flags}
+	if [ -n "${dumppubkey}" ]; then
+		warn "The dumppubkey variable is deprecated.  Use dumpon_flags."
+		flags="${flags} -k ${dumppubkey}"
+	fi
+	/sbin/dumpon ${flags} "${1}"
+	if [ $? -eq 0 ]; then
 		# Make a symlink in devfs for savecore
 		ln -fs "${1}" /dev/dumpdev
 		return 0

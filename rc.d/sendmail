@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/sendmail 330321 2018-03-03 10:32:00Z eadler $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/sendmail 334700 2018-06-06 01:51:05Z brd $
 #
 
 # PROVIDE: mail
@@ -196,6 +196,10 @@ sendmail_precmd()
 			info Creating certificate for sendmail.
 			sendmail_cert_create
 		fi
+	fi
+
+	if [ ! -f /var/log/sendmail.st ]; then
+		/usr/bin/install -m 640 -o root -g wheel /dev/null /var/log/sendmail.st
 	fi
 }
 

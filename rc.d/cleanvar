@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/cleanvar 332038 2018-04-04 17:00:18Z kevans $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/cleanvar 328951 2018-02-06 21:35:41Z feld $
 #
 
 # PROVIDE: cleanvar

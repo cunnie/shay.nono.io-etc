@@ -24,7 +24,7 @@
 #  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 #  SUCH DAMAGE.
 #
-# $FreeBSD: releng/11.2/etc/autofs/include_nis_nullfs 332587 2018-04-16 15:58:53Z trasz $
+# $FreeBSD: releng/12.0/usr.sbin/autofs/autofs/include_nis_nullfs 326251 2017-11-27 12:46:18Z trasz $
 #
 
 #

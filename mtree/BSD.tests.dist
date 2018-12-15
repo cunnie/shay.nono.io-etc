@@ -1,4 +1,4 @@
-# $FreeBSD: releng/11.2/etc/mtree/BSD.tests.dist 333069 2018-04-27 18:07:31Z jhb $
+# $FreeBSD: releng/12.0/etc/mtree/BSD.tests.dist 340753 2018-11-22 04:39:06Z kevans $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -34,7 +34,7 @@
         ..
         pwait
         ..
-        rcp
+        rm
         ..
         rmdir
         ..
@@ -46,6 +46,8 @@
             execution
             ..
             expansion
+            ..
+            invocation
             ..
             parameters
             ..
@@ -66,6 +68,8 @@
         ..
         usr.bin
             ctfconvert
+            ..
+            ztest
             ..
         ..
         usr.sbin
@@ -100,6 +104,8 @@
                     dtraceUtil
                     ..
                     end
+                    ..
+                    env
                     ..
                     enum
                     ..
@@ -200,6 +206,8 @@
                     strtoll
                     ..
                     struct
+                    ..
+                    sugar
                     ..
                     syscall
                     ..
@@ -348,9 +356,11 @@
         ..
         libnv
         ..
-        libpam
-        ..
         libproc
+        ..
+        libregex
+            data
+            ..
         ..
         librt
         ..
@@ -380,6 +390,8 @@
         ..
     ..
     sbin
+        bectl
+        ..
         dhclient
         ..
         devd
@@ -389,6 +401,10 @@
         ifconfig
         ..
         mdconfig
+        ..
+        pfctl
+            files
+            ..
         ..
     ..
     secure
@@ -420,7 +436,257 @@
         ..
         aio
         ..
+        audit
+        ..
+        auditpipe
+        ..
         capsicum
+        ..
+        cddl
+            zfs
+                bin
+                ..
+                include
+                ..
+                tests
+                    acl
+                        cifs
+                        ..
+                        nontrivial
+                        ..
+                        trivial
+                        ..
+                    ..
+                    atime
+                    ..
+                    bootfs
+                    ..
+                    cache
+                    ..
+                    cachefile
+                    ..
+                    clean_mirror
+                    ..
+                    cli_root
+                        zfs_upgrade
+                        ..
+                        zfs_promote
+                        ..
+                        zfs_clone
+                        ..
+                        zfs_property
+                        ..
+                        zfs_destroy
+                        ..
+                        zpool_create
+                        ..
+                        zpool_history
+                        ..
+                        zpool_expand
+                        ..
+                        zpool_remove
+                        ..
+                        zfs_mount
+                        ..
+                        zfs_unshare
+                        ..
+                        zdb
+                        ..
+                        zpool_online
+                        ..
+                        zpool_get
+                        ..
+                        zpool_export
+                        ..
+                        zfs_copies
+                        ..
+                        zfs_get
+                        ..
+                        zfs
+                        ..
+                        zpool_clear
+                        ..
+                        zpool_import
+                            blockfiles
+                            ..
+                        ..
+                        zpool
+                        ..
+                        zpool_offline
+                        ..
+                        zpool_replace
+                        ..
+                        zfs_rollback
+                        ..
+                        zpool_set
+                        ..
+                        zfs_send
+                        ..
+                        zfs_set
+                        ..
+                        zpool_detach
+                        ..
+                        zfs_diff
+                        ..
+                        zpool_scrub
+                        ..
+                        zfs_inherit
+                        ..
+                        zfs_snapshot
+                        ..
+                        zfs_share
+                        ..
+                        zpool_destroy
+                        ..
+                        zpool_status
+                        ..
+                        zfs_unmount
+                        ..
+                        zfs_receive
+                        ..
+                        zfs_create
+                        ..
+                        zpool_upgrade
+                            blockfiles
+                            ..
+                        ..
+                        zpool_add
+                        ..
+                        zfs_rename
+                        ..
+                        zpool_attach
+                        ..
+                        zfs_reservation
+                        ..
+                    ..
+                    cli_user
+                        misc
+                        ..
+                        zfs_list
+                        ..
+                        zpool_iostat
+                        ..
+                        zpool_list
+                        ..
+                    ..
+                    compression
+                    ..
+                    ctime
+                    ..
+                    delegate
+                    ..
+                    devices
+                    ..
+                    exec
+                    ..
+                    grow_pool
+                    ..
+                    grow_replicas
+                    ..
+                    history
+                    ..
+                    hotplug
+                    ..
+                    hotspare
+                    ..
+                    inheritance
+                    ..
+                    interop
+                    ..
+                    inuse
+                    ..
+                    iscsi
+                    ..
+                    large_files
+                    ..
+                    largest_pool
+                    ..
+                    link_count
+                    ..
+                    migration
+                    ..
+                    mmap
+                    ..
+                    mount
+                    ..
+                    mv_files
+                    ..
+                    nestedfs
+                    ..
+                    no_space
+                    ..
+                    online_offline
+                    ..
+                    pool_names
+                    ..
+                    poolversion
+                    ..
+                    quota
+                    ..
+                    redundancy
+                    ..
+                    refquota
+                    ..
+                    refreserv
+                    ..
+                    rename_dirs
+                    ..
+                    replacement
+                    ..
+                    reservation
+                    ..
+                    rootpool
+                    ..
+                    rsend
+                    ..
+                    scrub_mirror
+                    ..
+                    slog
+                    ..
+                    snapshot
+                    ..
+                    snapused
+                    ..
+                    sparse
+                    ..
+                    threadsappend
+                    ..
+                    truncate
+                    ..
+                    txg_integrity
+                    ..
+                    userquota
+                    ..
+                    utils_test
+                    ..
+                    write_dirs
+                    ..
+                    xattr
+                    ..
+                    zfsd
+                    ..
+                    zil
+                    ..
+                    zinject
+                    ..
+                    zones
+                    ..
+                    zvol
+                        zvol_ENOSPC
+                        ..
+                        zvol_cli
+                        ..
+                        zvol_misc
+                        ..
+                        zvol_swap
+                        ..
+                    ..
+                    zvol_thrash
+                    ..
+                ..
+            ..
+        ..
+        dtrace
         ..
         fifo
         ..
@@ -482,6 +748,16 @@
         ..
         netinet
         ..
+        netipsec
+            tunnel
+            ..
+        ..
+        netpfil
+            pf
+                ioctl
+                ..
+            ..
+        ..
         opencrypto
         ..
         pjdfstest
@@ -515,6 +791,8 @@
             ..
             unlink
             ..
+            utimensat
+            ..
         ..
         posixshm
         ..
@@ -527,6 +805,8 @@
     ..
     usr.bin
         apply
+        ..
+        awk
         ..
         basename
         ..
@@ -642,13 +922,21 @@
         ..
         comm
         ..
+        csplit
+        ..
         cut
+        ..
+        dc
+        ..
+        diff
         ..
         dirname
         ..
         du
         ..
         file2c
+        ..
+        find
         ..
         fold
         ..
@@ -696,6 +984,8 @@
             regress.multitest.out
             ..
         ..
+        seq
+        ..
         soelim
         ..
         stat
@@ -717,6 +1007,8 @@
         uuencode
         ..
         uniq
+        ..
+        vmstat
         ..
         xargs
         ..
@@ -743,6 +1035,8 @@
         newsyslog
         ..
         nmtree
+        ..
+        praudit
         ..
         pw
         ..

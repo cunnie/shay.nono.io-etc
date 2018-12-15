@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/ldconfig 301004 2016-05-30 19:59:51Z ngie $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/ldconfig 339000 2018-09-28 17:01:43Z jhb $
 #
 
 # PROVIDE: ldconfig
@@ -41,7 +41,7 @@ ldconfig_start()
 		${ldconfig} -elf ${_ins} ${_LDC}
 
 		case `sysctl -n hw.machine_arch` in
-		amd64)
+		amd64|mips64|powerpc64)
 			for i in ${ldconfig_local32_dirs}; do
 				if [ -d "${i}" ]; then
 					_files=`find ${i} -type f`
@@ -58,12 +58,12 @@ ldconfig_start()
 			done
 			check_startmsgs &&
 			    echo '32-bit compatibility ldconfig path:' ${_LDC}
-			${ldconfig} -32 -m ${_ins} ${_LDC}
+			${ldconfig} -32 ${_ins} ${_LDC}
 			;;
 		esac
 
 		case `sysctl -n hw.machine_arch` in
-		armv6)
+		armv[67])
 			for i in ${ldconfig_localsoft_dirs}; do
 				if [ -d "${i}" ]; then
 					_files=`find ${i} -type f`
@@ -80,7 +80,7 @@ ldconfig_start()
 			done
 			check_startmsgs &&
 			    echo 'Soft Float compatibility ldconfig path:' ${_LDC}
-			${ldconfig} -soft -m ${_ins} ${_LDC}
+			${ldconfig} -soft ${_ins} ${_LDC}
 			;;
 		esac
 

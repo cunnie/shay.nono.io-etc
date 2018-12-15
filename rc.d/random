@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/11.2/etc/rc.d/random 319275 2017-05-31 05:00:02Z delphij $
+# $FreeBSD: releng/12.0/libexec/rc/rc.d/random 318975 2017-05-27 06:24:06Z delphij $
 #
 
 # PROVIDE: random
