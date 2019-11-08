@@ -1,4 +1,4 @@
-# $FreeBSD: releng/12.0/etc/mtree/BSD.tests.dist 340753 2018-11-22 04:39:06Z kevans $
+# $FreeBSD: releng/12.1/etc/mtree/BSD.tests.dist 352416 2019-09-16 16:17:29Z yuripv $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -238,6 +238,16 @@
                     version
                     ..
                 ..
+                i386
+                    arrays
+                    ..
+                    funcs
+                    ..
+                    pid
+                    ..
+                    ustack
+                    ..
+                ..
             ..
             zfsd
             ..
@@ -270,7 +280,27 @@
             test-programs
             ..
         ..
+        csu
+            dynamic
+            ..
+            dynamiclib
+            ..
+            static
+            ..
+        ..
+        googletest
+            gmock
+            ..
+            gmock_main
+            ..
+            gtest
+            ..
+            gtest_main
+            ..
+        ..
         libarchive
+        ..
+        libbe
         ..
         libc
             c063
@@ -406,6 +436,8 @@
             files
             ..
         ..
+        ping
+        ..
     ..
     secure
         lib
@@ -421,6 +453,8 @@
         examples
             tests
                 atf
+                ..
+                googletest
                 ..
                 plain
                 ..
@@ -693,6 +727,8 @@
         file
         ..
         fs
+            fusefs
+            ..
             tmpfs
             ..
         ..
@@ -752,6 +788,8 @@
             tunnel
             ..
         ..
+    netmap
+    ..
         netpfil
             pf
                 ioctl
@@ -961,6 +999,8 @@
         lastcomm
         ..
         limits
+        ..
+        locale
         ..
         m4
         ..

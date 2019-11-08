@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/12.0/libexec/rc/rc.d/ntpd 336547 2018-07-20 13:59:29Z ian $
+# $FreeBSD: releng/12.1/libexec/rc/rc.d/ntpd 349312 2019-06-23 16:00:29Z ian $
 #
 
 # PROVIDE: ntpd
@@ -90,9 +90,10 @@ ntpd_precmd()
 	if can_run_nonroot; then
 		_user="ntpd"
 		driftopt="-f ${_ntp_default_driftfile}"
-	elif [ -z "${rc_flags##*-f*}" ] ||
-	     [ -z "${rc_flags##*--driftfile*}" ] ||
-	     grep -q "^[ \t]*driftfile" "${ntpd_config}"; then
+	elif grep -q "^[ \t]*driftfile" "${ntpd_config}" ||
+	     [ -n "${rc_flags}" ] &&
+	     ( [ -z "${rc_flags##*-f*}" ] ||
+	       [ -z "${rc_flags##*--driftfile*}" ] ); then
 		driftopt="" # admin set the option, we don't need to add it.
 	elif [ -f "${_ntp_old_driftfile}" ]; then
 		driftopt="-f ${_ntp_old_driftfile}"

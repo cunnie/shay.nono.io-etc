@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/12.0/usr.sbin/periodic/etc/daily/310.accounting 227482 2011-11-13 03:01:58Z dougb $
+# $FreeBSD: releng/12.1/usr.sbin/periodic/etc/daily/310.accounting 350878 2019-08-11 23:01:31Z ian $
 #
 
 # If there is a global system configuration file, suck it in.
@@ -47,7 +47,7 @@ case "$daily_accounting_enable" in
 		n=$(($n - 1))
 	    done
 
-	    /etc/rc.d/accounting rotate_log || rc=3
+	    /etc/rc.d/accounting onerotate_log || rc=3
 
 	    rm -f acct.merge && cp acct.0 acct.merge || rc=3
 	    sa -s $daily_accounting_flags /var/account/acct.merge || rc=3

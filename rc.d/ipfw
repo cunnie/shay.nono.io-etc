@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/12.0/libexec/rc/rc.d/ipfw 334782 2018-06-07 13:16:53Z kp $
+# $FreeBSD: releng/12.1/libexec/rc/rc.d/ipfw 346180 2019-04-13 08:55:49Z ae $
 #
 
 # PROVIDE: ipfw
@@ -33,6 +33,15 @@ ipfw_prestart()
 	fi
 	if checkyesno firewall_nat_enable; then
 		required_modules="$required_modules ipfw_nat"
+	fi
+	if checkyesno firewall_nat64_enable; then
+		required_modules="$required_modules ipfw_nat64"
+	fi
+	if checkyesno firewall_nptv6_enable; then
+		required_modules="$required_modules ipfw_nptv6"
+	fi
+	if checkyesno firewall_pmod_enable; then
+		required_modules="$required_modules ipfw_pmod"
 	fi
 }
 

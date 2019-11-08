@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: releng/12.0/libexec/rc/rc.d/hostapd 298514 2016-04-23 16:10:54Z lme $
+# $FreeBSD: releng/12.1/libexec/rc/rc.d/hostapd 349651 2019-07-03 16:43:40Z cy $
 #
 
 # PROVIDE: hostapd
@@ -11,7 +11,7 @@
 
 name="hostapd"
 desc="Authenticator for IEEE 802.11 networks"
-command="/usr/sbin/${name}"
+command=${hostapd_program}
 
 ifn="$2"
 if [ -z "$ifn" ]; then

@@ -1,11 +1,11 @@
-# $FreeBSD: releng/12.0/etc/mtree/BSD.var.dist 337382 2018-08-06 16:22:01Z markj $
+# $FreeBSD: releng/12.1/etc/mtree/BSD.var.dist 350878 2019-08-11 23:01:31Z ian $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
 
 /set type=dir uname=root gname=wheel mode=0755
 .
-    account
+    account             mode=0750
     ..
     at
 /set uname=daemon

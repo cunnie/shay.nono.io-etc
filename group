@@ -1,4 +1,4 @@
-# $FreeBSD: releng/12.0/etc/group 336525 2018-07-19 23:55:29Z ian $
+# $FreeBSD: releng/12.1/etc/group 336525 2018-07-19 23:55:29Z ian $
 #
 wheel:*:0:root,cunnie,ping,ping
 daemon:*:1:
@@ -45,3 +45,4 @@ dhcpd:*:136:
 mysql:*:88:
 polkitd:*:565:
 colord:*:970:
+cyrus:*:60:

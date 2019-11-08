@@ -1,4 +1,4 @@
-# $FreeBSD: releng/12.0/etc/mtree/BSD.usr.dist 336080 2018-07-08 01:29:48Z ian $
+# $FreeBSD: releng/12.1/etc/mtree/BSD.usr.dist 350256 2019-07-23 18:40:32Z dim $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -13,6 +13,18 @@
             ..
             event
             ..
+            gmock
+                internal
+                    custom
+                    ..
+                ..
+            ..
+            gtest
+                internal
+                    custom
+                    ..
+                ..
+            ..
             sqlite3
             ..
             ucl
@@ -25,7 +37,7 @@
         aout
         ..
         clang
-            6.0.1
+            8.0.1
                 include
                     sanitizer
                     ..
